@@ -8,7 +8,7 @@ RUN apt-get update && \
 #RUN echo 'Hello World!' > /var/www/html/index.html
 
 # Add index.html 
-ADD http-server /var/www/html/index.html
+ADD https://github.com/Nirmalvelu/dock_files/blob/main/index.html /var/www/html/index.html
 
 # Configure apache
 RUN echo '. /etc/apache2/envvars' > /root/run_apache.sh && \
